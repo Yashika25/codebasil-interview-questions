@@ -1,19 +1,9 @@
-/* C Program to Find Nth Fibonacci Number using Recursion */
+/* C Program to Find Nth Fibonacci Sequence using Recursion */
 
 #include<stdio.h>
- 
 int fib(int num);
- 
-int main()
-{
-   	int N, result;
-   	printf("\n To find Nth Fibonacci Number in the series, please enter N:  ");
-   	scanf("%d", &N);
-   	result = fib(N);
-	printf("\n %d Fibonacci Number = %d", N, result);
-    return 0;
-}
- 
+
+//Brute Force solution of Fibonacci Sequence in C
 int fib(int num)
 {
    	if ( num == 0 )
@@ -22,4 +12,14 @@ int fib(int num)
     	    return 1;
    	else
     	    return ( fib(num - 1) + fib(num - 2) );
+}
+
+int main()
+{
+	int N, result;
+	printf("\n To find Nth Fibonacci Number in the series, please enter N:  ");
+	scanf("%d", &N);
+	result = fib(N);
+	printf("\n %d Fibonacci Number = %d", N, result);
+	return 0;
 }
