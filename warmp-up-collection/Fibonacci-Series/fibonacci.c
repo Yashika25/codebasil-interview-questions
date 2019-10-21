@@ -2,6 +2,8 @@
 
 #include<stdio.h>
 
+int fib(int num);
+
 //Brute Force solution of Fibonacci Sequence in C
 int fib(int num)
 {

@@ -2,7 +2,8 @@
 
 #include<bits/stdc++.h> 
 using namespace std; 
- 
+
+
 int fib(int num) 
 { 
 	if (num == 0) 
